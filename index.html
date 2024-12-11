@@ -13,17 +13,13 @@
     const video = document.getElementById("video");
 
     playButton.addEventListener("click", () => {
-    // Добавляем класс для анимации кнопки
     playButton.classList.add("animate-pulse");
 
     setTimeout(() => {
-      // Запускаем видео
       video.play();
-      // Показываем controls
       video.setAttribute("controls", "true");
-      // Убираем кнопку
       playButton.style.display = "none";
-    }, 200); // Задержка в миллисекундах
+    }, 200); 
   });
 
   });
@@ -117,12 +113,10 @@
           width="1104"
           height="576"
         ></video>
-         <!-- Кнопка Play -->
   <button
   id="playButton"
   class="absolute inset-0 m-auto w-28 h-28 bg-black text-indigo-600 rounded-full shadow-lg transition-transform duration-300 group-hover:scale-125 flex items-center justify-center"
 >
-  <!-- Иконка Play -->
   <svg
     xmlns="http://www.w3.org/2000/svg"
     class="w-8 h-8"
